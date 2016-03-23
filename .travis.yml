@@ -5,3 +5,6 @@ php:
 
 install:
   - composer install
+
+notifications:
+  slack: snapcart-backend:pkOUtGSYExxS8O89fWXNHMlE
