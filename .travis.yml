@@ -14,7 +14,11 @@ install:
 script:
   - phpunit
   - openssl aes-256-cbc -K $encrypted_bd69831a7c24_key -iv $encrypted_bd69831a7c24_iv -in snapcarttest.pem.enc -out deployment/snapcarttest.pem -d
-  - if [[ "<tag>bmnmn</tag>" =~ "<tag>" ]];; then cap production deploy; fi
+  - if [[ "<tag>bmnmn</tag>" =~ "<tag>" ]]; then
+       echo "matched"
+    else
+       echo "not matched"
+    fi
 
 notifications:
   slack: snapcart-backend:pkOUtGSYExxS8O89fWXNHMlE
