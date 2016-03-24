@@ -5,6 +5,12 @@ php:
 
 install:
   - composer install
+  - gem install capistrano --no-ri --no-rdoc
+  - gem install capistrano/symfony --no-ri --no-rdoc
+
+script:
+  - phpunit
+  - cap production deploy
 
 notifications:
   slack: snapcart-backend:pkOUtGSYExxS8O89fWXNHMlE
