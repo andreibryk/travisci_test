@@ -5,7 +5,7 @@ set :application, 'my_app_name'
 set :repo_url, 'git@github.com:andreibryk/travisci_test.git'
 
 # Default branch is :master
-# ask :branch, ENV['TRAVIS_BRANCH']
+set :branch, ENV["BRANCH_NAME"] || "develop"
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/var/www/my_app_name'
