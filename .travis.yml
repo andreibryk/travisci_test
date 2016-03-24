@@ -3,6 +3,9 @@ language: php
 php:
   - 5.5
 
+before_install:
+   - rvm install 2.0.0
+
 install:
   - composer install
   - gem install capistrano --no-ri --no-rdoc
