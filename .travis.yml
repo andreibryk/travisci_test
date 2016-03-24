@@ -5,6 +5,7 @@ php:
 
 before_install:
    - rvm install 2.0.0
+   - chmod +x travis
 
 install:
   - composer install
