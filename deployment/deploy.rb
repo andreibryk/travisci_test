@@ -25,7 +25,7 @@ set :pty, true
 set :ssh_options, {
   forward_agent: true,
   auth_methods: ["publickey"],
-  keys: ["~/.ssh/snapcarttest.pem"]
+  keys: ["deployment/snapcarttest.pem"]
 }
 
 # Default value for :linked_files is []
