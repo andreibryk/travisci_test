@@ -5,7 +5,7 @@ set :application, 'my_app_name'
 set :repo_url, 'git@github.com:andreibryk/travisci_test.git'
 
 # Default branch is :master
-set :branch, ENV["BRANCH_NAME"] || "develop"
+set :branch, ENV["BRANCH_NAME"] || "feature/test_VH"
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/var/www/my_app_name'
@@ -27,6 +27,9 @@ set :ssh_options, {
   auth_methods: ["publickey"],
   keys: ["deployment/snapcarttest.pem"]
 }
+
+set :symfony_directory_structure, 2
+set :sensio_distribution_version, 4
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
