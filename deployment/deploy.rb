@@ -33,7 +33,7 @@ set :symfony_directory_structure, 2
 set :sensio_distribution_version, 4
 
 set :permission_method, :acl
-set :file_permissions_users, ["www-data"]
+set :file_permissions_users, ["www-data-user"]
 set :file_permissions_paths, ["app/cache"]
 
 # Default value for :linked_files is []
