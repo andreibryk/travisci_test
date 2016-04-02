@@ -46,6 +46,8 @@ set :file_permissions_paths, ["app/cache"]
 # Default value for keep_releases is 5
 # set :keep_releases, 5
 
+before "deploy:updated", "deploy:set_permissions:acl"
+
 namespace :deploy do
 
   after :restart, :clear_cache do
