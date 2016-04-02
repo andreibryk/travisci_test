@@ -33,8 +33,9 @@ set :symfony_directory_structure, 2
 set :sensio_distribution_version, 4
 
 set :permission_method, :acl
-set :file_permissions_users, ["www-data-user"]
+set :file_permissions_users, ["www-data"]
 set :file_permissions_paths, ["app/cache"]
+set :file_permissions_chmod_mode, "-dR -m"
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
