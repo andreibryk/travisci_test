@@ -28,7 +28,7 @@ set :ssh_options, {
   keys: ["deployment/snapcarttest.pem"]
 }
 
-set :composer_options,  "--verbose"
+set :composer_install_flags, '--no-interaction'
 set :symfony_directory_structure, 2
 set :sensio_distribution_version, 4
 
