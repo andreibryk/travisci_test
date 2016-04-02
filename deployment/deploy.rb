@@ -32,6 +32,8 @@ set :composer_install_flags, '--no-interaction'
 set :symfony_directory_structure, 2
 set :sensio_distribution_version, 4
 
+set :file_permissions_paths, ["app/cache"]
+
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 
